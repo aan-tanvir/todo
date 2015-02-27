@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>To Do List</title>
+		<link href='css/bootstrap.min.css' rel='stylesheet'>
+		<script src='js/bootstrap.min.js'>
+		</script>
+		<style>
+			img.logo{
+				width: 332px;
+				height: 138px;
+			}
+
+		</style>
+	</head>
+	<body ng-app='todo'>
+		<div class='container'>
+			<div class='row'>
+				<div class='col-sm-8 col-sm-offset-2'>
+					<div class='col-sm-6'>
+						<img class='logo' src='images/todo.gif'>
+					</div>
+					<div class='col-sm-6' style='padding-top: 45px;'>
+						<h1 style='font-size: 80px; font-weight: bolder;'>LIST</h1>
+					</div>
+				</div>
+				<hr>
+			</div>
+
+			<div class='row'>
+				<ng-view></ng-view>
+			</div>
+			<div class='row'>
+				<hr>
+				<p class='text-center'>&copy; 2015 Aan-Nahl</p>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src='js/angular.min.js'></script>
+	    <script type="text/javascript" src='js/angular-route.min.js'></script>
+	    <script type="text/javascript" src='js/control.js'></script>
+	    <script type="text/javascript" src='js/route.js'></script>
+
+	</body>
+</html>

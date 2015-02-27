@@ -1,0 +1,22 @@
+<div class='row' style='margin-top: 20px; margin-bottom: 20px;'>
+	<div class="checkbox col-sm-4 col-sm-offset-4" ng-repeat="x in list">
+		<label>
+			<input type="checkbox" ng-click='deleteTodo(x.description)'> {{ x.description }}
+		</label>
+	</div>
+</div>
+<form ng-submit='createTodo()'>
+	<ng-form>
+		<div class='row'>
+			<div class='col-sm-6 col-sm-offset-3' style='padding-top: 30px;'>
+				<p class='text-center'><span style='font-size: 20px; font-weight: bold;'>Add things to do...:</span></p>
+			</div>
+			<div class='col-sm-8 col-sm-offset-2'>
+				<input type='text' class='form-control' ng-model='thingstodo.text'>
+			</div>
+			<div class='col-sm-2 col-sm-offset-5'>
+				<button class='btn btn-primary btn-large' type='submit' ng-click='Submit' style='width: 100% !important; margin-top: 30px;'>+ ADD </button>
+			</div>
+		</div>
+	</ng-form>
+</form>
